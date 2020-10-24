@@ -2,7 +2,6 @@
 
 from collections import defaultdict
 
-
 # Solution 1: DFS with cache - O(n^2)
 
 class Solution:
