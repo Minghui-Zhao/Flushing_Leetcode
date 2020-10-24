@@ -1,8 +1,11 @@
 # 1049. Last Stone Weight II
 
 # Solution 1: dfs with cache
+import collections
+
+
 class Solution:
-    def lastStoneWeightII(self, stones: List[int]) -> int:
+    def lastStoneWeightII(self, stones) -> int:
         cache = collections.defaultdict(dict)
         return self.dfs(0, 0, stones, cache)
 
