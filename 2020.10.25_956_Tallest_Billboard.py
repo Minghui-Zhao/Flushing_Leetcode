@@ -1,4 +1,6 @@
 # Solution 1: dfs with cache
+import collections
+
 
 class Solution(object):
     def tallestBillboard(self, rods):
