@@ -10,7 +10,6 @@ class Solution(object):
             return s1 if (s1 == s2) else -1
 
         if (i, abs(s1 - s2)) not in cache:
-
             m = max(
                 self.dfs(i + 1, s1 + rods[i], s2, cache, rods),
                 self.dfs(i + 1, s1, s2 + rods[i], cache, rods),
@@ -26,6 +25,7 @@ class Solution(object):
 
 
 # Solution 2: dp
+
 class Solution(object):
     def tallestBillboard(self, rods):
         dp = dict()
