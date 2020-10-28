@@ -18,5 +18,6 @@ class Solution:
             if not self.helper(list(nums[:i]) + list(nums[i + 1:]), desiredTotal - nums[i]):
                 self.memo[s] = True
                 return True
+
         self.memo[s] = False
         return False
