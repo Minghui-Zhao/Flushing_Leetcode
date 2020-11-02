@@ -1,4 +1,5 @@
 class Solution:
+
     def canIWin(self, maxChoosableInteger: int, desiredTotal: int) -> bool:
         if (1 + maxChoosableInteger) * maxChoosableInteger / 2 < desiredTotal:
             return False
