@@ -5,7 +5,6 @@ class Solution:
         self.memo = {}
         return self.helper(list(range(1, maxChoosableInteger + 1)), desiredTotal)
 
-
     def helper(self, nums, desiredTotal):
         s = str(nums)
         if s in self.memo:
