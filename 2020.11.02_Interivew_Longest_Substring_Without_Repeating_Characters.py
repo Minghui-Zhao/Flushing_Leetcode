@@ -25,6 +25,7 @@ def longestSubstringLength(s):
             # print(maxLen)
     return maxLen
 
+
 if __name__ == '__main__':
     # print(longestSubstringLength('abac'))
     print(longestSubstringLength('abcabcabchgik'))
