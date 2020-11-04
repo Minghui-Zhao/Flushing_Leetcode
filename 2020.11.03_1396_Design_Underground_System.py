@@ -1,7 +1,6 @@
 import collections
 
 class UndergroundSystem:
-
     def __init__(self):
         self.enter = collections.defaultdict(list)
         self.exit = collections.defaultdict(list)
