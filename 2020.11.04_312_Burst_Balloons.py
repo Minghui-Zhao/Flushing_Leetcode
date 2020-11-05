@@ -1,4 +1,5 @@
 class Solution:
+
     def maxCoins(self, nums: list) -> int:
         n = len(nums) + 2
         new_nums = [1] * n
