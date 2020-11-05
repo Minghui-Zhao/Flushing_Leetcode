@@ -1,7 +1,7 @@
 # 518. Coin Change 2
 
 class Solution:
-    def change(self, amount: int, coins: List[int]) -> int:
+    def change(self, amount: int, coins) -> int:
         dp = [[0 for j in range(amount + 1)] for i in range(2)]
         dp[0][0] = 1
 
@@ -16,3 +16,8 @@ class Solution:
                     dp[i % 2][j] += dp[i % 2][j - curNum]
 
         return dp[len(coins) % 2][-1]
+
+
+if __name__ == '__main__':
+    s = Solution()
+    print(s.change(55, [2, 3, 4, 5]))
