@@ -4,8 +4,10 @@ class Solution:
         if not s:
             return 0
         dp = [[0 for _ in range(len(s))] for _ in range(len(s))]
+
         for i in range(len(s)):
             dp[i][i] = 1
+
         for d in range(1, len(s)):
             for l in range(0, len(s) - d):
                 r = l + d
