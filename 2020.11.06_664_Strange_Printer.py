@@ -1,4 +1,5 @@
 class Solution:
+
     def strangePrinter(self, s: str) -> int:
         if not s:
             return 0
