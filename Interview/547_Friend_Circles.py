@@ -18,6 +18,7 @@ class Solution:
                 self.dfs(M, visited, j)
 
 
+
 # Solution 2: Union Find
 class Solution:
     def findCircleNum(self, M):
